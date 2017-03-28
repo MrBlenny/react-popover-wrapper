@@ -4,6 +4,23 @@ This is a simple wrapper that makes react-popover a little easier to use.
 ### Install
 `npm install react-popover-wrapper --save`
 
+This package is not yet compiled with babel so you will need to do that. If you are using webpack, set up your loaders to include this file (often webpack loaders will ignore npm).
+
+```
+  rules: [
+      {
+          test: /\.js$/,
+          use: ['babel-loader'],
+          exclude: /node_modules/
+      },{
+          test: /\.js$/,
+          use: ['babel-loader'],
+          include: [
+              path.resolve(__dirname, 'node_modules/react-popover-wrapper'),
+          ],
+      },
+  ```
+
 ### Example
 ```javascript
 import Popover from 'react-popover-wrapper';
