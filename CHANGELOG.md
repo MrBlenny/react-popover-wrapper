@@ -1,3 +1,6 @@
+# 2.1.0
+Bump react-popover version
+
 # 2.0.0
 __CHANGED__ `React.PropTypes` to `PropTypes from 'prop-types'` a la React 16
 
